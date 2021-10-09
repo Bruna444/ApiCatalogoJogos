@@ -33,6 +33,7 @@ namespace ApiCatalogoJogos
         {
             services.AddScoped<IJogoService, JogoService>();
             services.AddScoped<IJogoRepository, JogoSqlServerRepository>();
+            services.AddScoped<IJogoRepository, JogoRepository>();
 
 
             services.AddControllers();
